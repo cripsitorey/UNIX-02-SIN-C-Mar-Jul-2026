@@ -1,0 +1,1 @@
+uname -a #da informacion sobre el ordenador
