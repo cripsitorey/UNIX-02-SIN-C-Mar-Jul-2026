@@ -24,3 +24,6 @@ gpg --armor --export-secret-keys C896C796A2A95CF8
 
 ## 9 
 gpg --import naco.asc 
+
+## 10
+echo "Olvidala mejor olvidala" > doc_no_cifrado.txt
