@@ -29,4 +29,7 @@ gpg --import naco.asc
 echo "Olvidala mejor olvidala" > doc_no_cifrado.txt
 
 ## 11
-echo "Olvidala mejor olvidala" > doc_no_cifrado.txt
+gpg --output doc_cifrado.txt --encrypt --recipient dave87821@gmail.com doc_no_cifrado.txt
+
+## 12
+gpg --decrypt Cifrado.txt
