@@ -21,3 +21,6 @@ gpg --list-secret-keys --keyid-format=long
 
 ## 8
 gpg --armor --export-secret-keys C896C796A2A95CF8
+
+## 9 
+gpg --import naco.asc 
