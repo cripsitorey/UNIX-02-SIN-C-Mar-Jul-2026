@@ -8,5 +8,13 @@ which gpg #nos da la ubicacion del binario de gpg
 gpg --version #nos dice la version de gpg e informacion adicional
 
 ## 4
-gpg --full-generate-key
+gpg --full-generate-key ## generar llaves
 
+## 5 
+gpg --list-keys
+
+## 6
+gpg --armor --export emilio.sebastianc@gmail.com > mi_llave_publica.asc
+
+## 7 
+ gpg --list-secret-keys --keyid-format=long
