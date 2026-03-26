@@ -17,4 +17,7 @@ gpg --list-keys
 gpg --armor --export emilio.sebastianc@gmail.com > mi_llave_publica.asc
 
 ## 7 
- gpg --list-secret-keys --keyid-format=long
+gpg --list-secret-keys --keyid-format=long
+
+## 8
+gpg --armor --export-secret-keys C896C796A2A95CF8
