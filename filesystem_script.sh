@@ -13,3 +13,5 @@ sudo mv saludobin /bin
 saludobin
 # 5 print working directory
 pwd
+# 6 Ver symbolyclinks
+ls -F
