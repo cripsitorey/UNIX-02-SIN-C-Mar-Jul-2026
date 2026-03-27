@@ -5,3 +5,9 @@ ls
 # 3 view cpuinfo
 cd /proc
 cat cpuinfo
+#Creo binario y ejecuto
+gcc saludo.c -o saludobin
+move 
+clear
+sudo mv saludobin /bin
+saludobin
