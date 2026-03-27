@@ -11,3 +11,5 @@ move
 clear
 sudo mv saludobin /bin
 saludobin
+# 5 print working directory
+pwd
