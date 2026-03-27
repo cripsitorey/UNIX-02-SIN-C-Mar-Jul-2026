@@ -15,3 +15,5 @@ saludobin
 pwd
 # 6 Ver symbolyclinks
 ls -F
+# 7 ver inodes
+ls -i
