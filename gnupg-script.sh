@@ -63,3 +63,6 @@ gpg --sign-key dievelozes@uide.edu.ec
 
 ## 22 Genero un archivo firmado y encriptado
 gpg --output doc_cifrado_y_firmado_bin.txt --encrypt --sign --recipient dievelozes@uide.edu.ec doc_no_cifrado.txt
+
+## 23 Desencripto el archivo firmado y cifrado
+gpg --output doc_validado_firmado_descifrado.txt --decrypt deifo.txt
