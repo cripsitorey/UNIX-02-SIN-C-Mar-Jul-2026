@@ -13,7 +13,7 @@ sudo mv saludobin /bin
 saludobin
 # 5 print working directory
 pwd
-# 6 Ver symbolyclinks
+# 6 Ver tipos de ficheros
 ls -F
 # 7 ver inodes
 ls -i

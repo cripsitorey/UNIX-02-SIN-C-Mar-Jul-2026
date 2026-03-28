@@ -33,3 +33,9 @@ gpg --output doc_cifrado.txt --encrypt --recipient dave87821@gmail.com doc_no_ci
 
 ## 12
 gpg --decrypt Cifrado.txt
+
+## 13
+gpg --output doc_no_cifrado.txt --clearsign doc_no_cifrado.txt
+
+## 14
+cat doc_no_cifrado.txt
