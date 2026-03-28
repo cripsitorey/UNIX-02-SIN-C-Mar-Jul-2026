@@ -47,3 +47,19 @@ gpg --output doc_no_cifrado_firmado_bin.txt --sign doc_no_cifrado.txt # firmo bi
 gpg --output doc_no_cifrado_firmado_detached.txt --detach-sign doc_no_cifrado.txt # firmo con archivos separados
 
 ## 17
+gpg --verify signed_no_cifrado_Compa.txt # verifico el clearsigned
+
+## 18
+gpg --verify diego.txt # verficio el sign 
+
+## 19
+gpg --verify diego_detached.txt doc_no_cifrado_diego.txt # verifico el detatched
+
+## 20
+gpg --edit-key dievelozes@uide.edu.ec
+
+## 21
+gpg --sign-key dievelozes@uide.edu.ec
+
+## 22 Genero un archivo firmado y encriptado
+gpg --output doc_cifrado_y_firmado_bin.txt --encrypt --sign --recipient dievelozes@uide.edu.ec doc_no_cifrado.txt
