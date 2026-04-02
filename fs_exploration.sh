@@ -8,3 +8,5 @@ sudo apt update
 sudo apt upgrade
 # 5 instalar paquete parted
 sudo apt install parted
+# 6 con parted muestro la tabla de particiones GPT/MBR y sus tamaños exactos, con lsblk muestro la estructura de discos y UUIDs y con && digo que voy a ejecutar otro comando despues epro solo si el anterior fue exitoso y -e interpreta caracteres especiales
+sudo parted -l && echo -e "\n---\n" && lsblk -f && echo -e "\n---\n"
