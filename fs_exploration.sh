@@ -12,3 +12,9 @@ sudo apt install parted
 sudo parted -l && echo -e "\n---\n" && lsblk -f && echo -e "\n---\n"
 # 7 inicia un test condicional, verifica si es un directorio, le doy la ruta a la carpeta efi del sistema, acabo el test y le digo queme diga si es BIOS o UEFI y || es un operador ternario OR
 [ -d /sys/firmware/efi ] && echo "UEFI" || echo "BIOS"
+# 8 imprimo con echo "Mi archivo" y luego redirecciono a test.txt
+echo "Mi archivo" > test.txt
+# 9 veo el contnido del archivo
+cat test.txt
+# 10 veo informacion del archivo
+stat test.txt
