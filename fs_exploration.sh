@@ -10,3 +10,5 @@ sudo apt upgrade
 sudo apt install parted
 # 6 con parted muestro la tabla de particiones GPT/MBR y sus tamaños exactos, con lsblk muestro la estructura de discos y UUIDs y con && digo que voy a ejecutar otro comando despues epro solo si el anterior fue exitoso y -e interpreta caracteres especiales
 sudo parted -l && echo -e "\n---\n" && lsblk -f && echo -e "\n---\n"
+# 7 inicia un test condicional, verifica si es un directorio, le doy la ruta a la carpeta efi del sistema, acabo el test y le digo queme diga si es BIOS o UEFI y || es un operador ternario OR
+[ -d /sys/firmware/efi ] && echo "UEFI" || echo "BIOS"
