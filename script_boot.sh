@@ -17,3 +17,10 @@ $BASH
 $PATH 
 $HOME 
 #Example enviromental variable
+
+ls -lai # ls with -l -a & -i args for list all and also inodes
+ls -l -a -i # the same as -lai but bigger
+ls --all # the same as -a but bigger
+# . is here, .. is father dir
+man ls # show manual entry for ls
+
