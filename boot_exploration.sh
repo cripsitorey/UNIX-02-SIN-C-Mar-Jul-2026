@@ -20,3 +20,6 @@ sudo sh -c 'echo "chao" >> /etc/archivo_protedigo' # Adding a new line in /etc/a
 
 sudo -i #change to root user (recomendable)
 sudo su #change to root user (NO recomendable)
+
+echo "$HOME" #Expands enviromental variable
+echo '$HOME' #Prints the string
