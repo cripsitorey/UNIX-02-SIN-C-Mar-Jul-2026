@@ -16,3 +16,4 @@ chmod o-r secreto.txt # Removing read to other
 chmod u+rw,go-rwx privado # Assing read and write to user and removing all to group and others
 
 echo "hola" | sudo tee /etc/archivo_protedigo > /dev/null # doing echo with "hola" content, and using tee to asing the output of echo to the file
+sudo sh -c 'echo "chao" >> /etc/archivo_protedigo' # Adding a new line in /etc/archivo_protedigo with the text "chao" redirecting echo stdout to the file
