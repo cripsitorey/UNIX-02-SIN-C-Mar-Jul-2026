@@ -23,3 +23,10 @@ sudo su #change to root user (NO recomendable)
 
 echo "$HOME" #Expands enviromental variable
 echo '$HOME' #Prints the string
+
+echo '#!/bin/sh' > hola.sh
+echo 'echo "Hola desde mi primer script"' >> hola.sh
+cat hola.sh
+./hola.sh
+sudo chmod +x hola.sh
+
