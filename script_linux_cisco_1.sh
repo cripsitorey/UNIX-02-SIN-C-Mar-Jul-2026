@@ -37,3 +37,10 @@ ls -l hello.sh # Lists details of 'hello.sh' to check its current permissions
 chmod u+x hello.sh # Grants execute permissions to the user (owner) of 'hello.sh'
 sudo chown root hello.sh # Changes the owner of 'hello.sh' to the 'root' user
 sudo ./hello.sh # Executes 'hello.sh' as the root user
+
+cat animals.txt # Concatenates and prints the entire content of 'animals.txt'
+cat alpha.txt # Concatenates and prints the entire content of 'alpha.txt'
+head alpha.txt # Prints the first 10 lines of 'alpha.txt'
+tail alpha.txt # Prints the last 10 lines of 'alpha.txt'
+head -n 5 alpha.txt # Prints exactly the first 5 lines of 'alpha.txt'
+tail -n 5 alpha.txt # Prints exactly the last 5 lines of 'alpha.txt'
