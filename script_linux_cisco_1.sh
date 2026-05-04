@@ -27,3 +27,6 @@ ls -r /var/log # Lists contents of '/var/log/' sorted in reverse alphabetical or
 
 su - # Switches user to root and initializes the root environment variables
 exit # Exits the current shell or user session
+
+sl # Displays an ASCII steam locomotive animation (requires 'sl' package)
+sudo sl # Executes the 'sl' animation with superuser privileges
