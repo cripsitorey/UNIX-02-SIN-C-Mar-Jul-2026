@@ -9,3 +9,12 @@ aptitude moo # Displays a hidden easter egg message (requires aptitude installed
 aptitude -v moo # Adds one level of verbosity to the easter egg
 aptitude -vv moo # Adds a second level of verbosity to the easter egg
 aptitude -vvv moo # Adds a third level of verbosity to the easter egg
+
+pwd # Prints the current working directory absolute path
+cd Documents # Changes the current directory to the relative path 'Documents'
+cd / # Changes the current directory to the root directory
+cd /home/sysadmin # Changes the current directory to the absolute path '/home/sysadmin'
+cd Documents # Changes the directory to 'Documents' relative to the current location
+cd School/Art # Changes the directory to 'School/Art' relative to the current location
+cd .. # Moves one directory level up to the parent directory
+cd ~ # Changes the directory to the current user's home directory
