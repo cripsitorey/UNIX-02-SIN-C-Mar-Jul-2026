@@ -18,3 +18,9 @@ cd Documents # Changes the directory to 'Documents' relative to the current loca
 cd School/Art # Changes the directory to 'School/Art' relative to the current location
 cd .. # Moves one directory level up to the parent directory
 cd ~ # Changes the directory to the current user's home directory
+
+ls -l /var/log/ # Lists contents of '/var/log/' in long format
+ls -lt /var/log # Lists contents of '/var/log/' in long format, sorted by modification time (newest first)
+ls -l -S /var/log # Lists contents of '/var/log/' in long format, sorted by file size (largest first)
+ls -lSr /var/log # Lists contents of '/var/log/' in long format, sorted by file size in reverse (smallest first)
+ls -r /var/log # Lists contents of '/var/log/' sorted in reverse alphabetical order
