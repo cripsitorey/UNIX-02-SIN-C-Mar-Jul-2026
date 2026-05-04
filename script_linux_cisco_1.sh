@@ -44,3 +44,6 @@ head alpha.txt # Prints the first 10 lines of 'alpha.txt'
 tail alpha.txt # Prints the last 10 lines of 'alpha.txt'
 head -n 5 alpha.txt # Prints exactly the first 5 lines of 'alpha.txt'
 tail -n 5 alpha.txt # Prints exactly the last 5 lines of 'alpha.txt'
+
+cp /etc/passwd . # Copies the '/etc/passwd' file to the current directory
+dd if=/dev/zero of=/tmp/swapex bs=1M count=50 # Creates a 50MB file named 'swapex' filled with zeros
