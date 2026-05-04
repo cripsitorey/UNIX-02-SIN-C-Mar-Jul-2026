@@ -24,3 +24,6 @@ ls -lt /var/log # Lists contents of '/var/log/' in long format, sorted by modifi
 ls -l -S /var/log # Lists contents of '/var/log/' in long format, sorted by file size (largest first)
 ls -lSr /var/log # Lists contents of '/var/log/' in long format, sorted by file size in reverse (smallest first)
 ls -r /var/log # Lists contents of '/var/log/' sorted in reverse alphabetical order
+
+su - # Switches user to root and initializes the root environment variables
+exit # Exits the current shell or user session
