@@ -30,3 +30,10 @@ exit # Exits the current shell or user session
 
 sl # Displays an ASCII steam locomotive animation (requires 'sl' package)
 sudo sl # Executes the 'sl' animation with superuser privileges
+
+cd ~/Documents # Changes directory to 'Documents' inside the home directory
+ls -l hello.sh # Lists details of 'hello.sh' to check its current permissions
+./hello.sh # Attempts to execute the 'hello.sh' script in the current directory
+chmod u+x hello.sh # Grants execute permissions to the user (owner) of 'hello.sh'
+sudo chown root hello.sh # Changes the owner of 'hello.sh' to the 'root' user
+sudo ./hello.sh # Executes 'hello.sh' as the root user
