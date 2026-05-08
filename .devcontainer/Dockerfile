@@ -188,7 +188,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Por defecto Docker usa /bin/sh (un shell más limitado y antiguo). Lo
 # cambiamos a bash por si agregamos más instrucciones con sintaxis
 # moderna (arrays, [[ ]], etc.).
-SHELL ["/bin/bash", "-c"]
+SHELL ["/bin/zsh", "-c"]
 
 
 # ----------------------------------------------------------------------------
@@ -233,6 +233,7 @@ __set_prompt() {
 }
 PROMPT_COMMAND=__set_prompt
 EOF
+RUN echo 'PROMPT="%(?.%F{green}✓%f.%F{red}✗%f) %F{cyan}[Emilio_Cuenca]%f %F{yellow}%1~%f %# "' >> /root/.zshrc
 CMD ["/bin/zsh"]
 
 
