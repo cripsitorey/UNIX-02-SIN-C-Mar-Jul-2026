@@ -21,3 +21,5 @@ ls -l comun  #listed file details of comun
 usermod -a -G grupo_test luna #Adding user to group
 chgrp grupo_test comun #Changing file group
 ls -l comun #listing file details
+chown luna:grupo_test mi_archivo #Changing owner
+ls -l mi_archivo #Listing file details
