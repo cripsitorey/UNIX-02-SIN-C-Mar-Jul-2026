@@ -23,3 +23,7 @@ chgrp grupo_test comun #Changing file group
 ls -l comun #listing file details
 chown luna:grupo_test mi_archivo #Changing owner
 ls -l mi_archivo #Listing file details
+mkdir -p proyecto/sub #created new dir
+touch proyecto/readme proyecto/sub/datos #created new files
+chown -R luna:grupo_test proyecto #changed owner to dir (Recursively)
+ls -IR proyecto #Listed
