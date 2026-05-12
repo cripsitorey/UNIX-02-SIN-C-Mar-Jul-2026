@@ -1,4 +1,4 @@
-apt update
-apt install acl
-chown -R &(whoami) .
-setfacl -bnR .
+apt update #Updating Repos
+apt install acl #installing "acl"
+chown -R &(whoami) . #changing owner
+setfacl -bnR . #changing permissions
