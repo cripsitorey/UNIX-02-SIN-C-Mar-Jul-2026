@@ -18,3 +18,6 @@ groupadd grupo_test #create a group
 groups #list groups (No one asigned)
 touch comun #created comun file
 ls -l comun  #listed file details of comun
+usermod -a -G grupo_test luna #Adding user to group
+chgrp grupo_test comun #Changing file group
+ls -l comun #listing file details
