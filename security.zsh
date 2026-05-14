@@ -27,3 +27,10 @@ mkdir -p proyecto/sub #created new dir
 touch proyecto/readme proyecto/sub/datos #created new files
 chown -R luna:grupo_test proyecto #changed owner to dir (Recursively)
 ls -IR proyecto #Listed
+id #userID (number), primary group, secondary groups
+cat /etc/passwd | head -10 #view 10 first lines in passwd file (password file)
+cat /etc/group | head -10 #view 10 first lines in group file
+groups luna #view groups for luna
+id -u #show user ID
+id -g #show group ID
+id -G #show all groups ID
