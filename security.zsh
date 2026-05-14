@@ -34,3 +34,11 @@ groups luna #view groups for luna
 id -u #show user ID
 id -g #show group ID
 id -G #show all groups ID
+cat /etc/group | grep root #view lines containing "root" in group file
+groupadd desarrolladores #create new group
+groupadd -g 2000 operaciones #create new group with specific GID
+groupadd --system servicios_web #create new system group
+grep "desarrolladores\|operaciones\|servicios_web" /etc/group #view lines containing group names in group file
+grep -E "desarrolladores|operaciones|servicios_web" /etc/group #view lines containing group names in group file using extended regex
+groupadd --help #view help for groupadd command
+grep "GID_MIN\|GID_MAX\|SYS_GID" /etc/login.defs #view lines containing GID_MIN, GID_MAX, SYS_GID in login.defs file
