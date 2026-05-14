@@ -42,3 +42,7 @@ grep "desarrolladores\|operaciones\|servicios_web" /etc/group #view lines contai
 grep -E "desarrolladores|operaciones|servicios_web" /etc/group #view lines containing group names in group file using extended regex
 groupadd --help #view help for groupadd command
 grep "GID_MIN\|GID_MAX\|SYS_GID" /etc/login.defs #view lines containing GID_MIN, GID_MAX, SYS_GID in login.defs file
+addgroup diseno
+addgroup --gid 2100 marketing
+addgroup --system cache_web
+grep "diseño\|marketing\|cache_web" /etc/group #view lines containing group names in group file
