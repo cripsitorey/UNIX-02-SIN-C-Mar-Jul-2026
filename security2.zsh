@@ -25,4 +25,8 @@ touch ~/dentro_de_desarrolladores.txt
 ls -la ~/dentro_de_desarrolladores.txt
 ## Creating a new dir
 mkdir -p ~/proyecto_dev/src
-ls -la ~/   
+ls -la ~/
+exit #Exit subshell
+id -gn #Verify we are in the original group
+echo "Grupo restaurados: $(id-gn)" #Print current main group outside subshell
+ls -la ~/antes_de_newgrp.txt ~/dentro_de_newgrp.txt #Comparing both files
