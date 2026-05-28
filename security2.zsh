@@ -30,3 +30,8 @@ exit #Exit subshell
 id -gn #Verify we are in the original group
 echo "Grupo restaurados: $(id-gn)" #Print current main group outside subshell
 ls -la ~/antes_de_newgrp.txt ~/dentro_de_newgrp.txt #Comparing both files
+groupadd grupo_restringido #Creating a new group with name "grupo_restringido"
+gpasswd grupo_restringido #Setting a passwd to new group
+useradd -m luna #creating a new user named "luna"
+su luna #Login as luna
+newgrp grupo_restringido #Joining temporary to new group with newgrp with password
