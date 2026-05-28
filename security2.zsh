@@ -7,4 +7,16 @@ id -gn
 echo "Grupo actual: $(id-gn)"
 # Create a new file before  newgrp
 touch ~/antes_de_newgrp.txt
-ls ~/antes_de_newgrp.txt 
+ls ~/antes_de_newgrp.txt
+#Using newgrp
+## Installing newgrp package
+apt update
+apt upgrade
+apt install util-linux-extra
+## Creating group "desarrolladores"
+addgroup desarrolladores
+## Using newgrp with "desarrolladores"
+newgrp desarrolladores
+## Checking if it worked displaying group name
+id -gn
+echo "Nuevo grupo activo: $(id-gn)"
