@@ -10,6 +10,6 @@ echo ${OSTYPE}
 ps -ef
 df -h
 #man
-#bash -x blackhatbash1.sh as shell
-#bash -r blackhatbash1.sh 
-#bash -n blackhatbash1.sh debug
+#bash -x blackhatbash1.sh debug
+#bash -r blackhatbash1.sh restricted
+#bash -n blackhatbash1.sh 
