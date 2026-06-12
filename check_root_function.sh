@@ -12,3 +12,8 @@ if check_if_root; then #begin of if statement and evaluating if succes or not
 else #all other
  echo "User is not root!" #printing a message
 fi #enf of if
+
+#useradd -m luna
+#su - luna
+#whoami (Out -> luna)
+#bash check_root_function.sh (Out -> User is not root!)
