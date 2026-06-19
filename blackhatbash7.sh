@@ -22,3 +22,6 @@ grep "zilla" newlog.txt
 sed -i '1d' newlog.txt
 git diff newlog.txt
 sed -i '$d' newlog.txt
+
+sed 's/ //g' newlog.txt > newlog1.txt
+grep " " newlog1.txt
