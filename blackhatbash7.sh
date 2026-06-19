@@ -18,4 +18,4 @@ grep "42.236.10.117" log.txt | awk '{print $7}'
 sed 's/Mozilla/Godzilla/g' log.txt
 grep "zilla" log.txt
 sed 's/Mozilla/Godzilla/g' log.txt > newlog.txt
-grep "zilla" log.txt
+grep "zilla" newlog.txt
